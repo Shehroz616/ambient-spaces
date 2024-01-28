@@ -65,7 +65,8 @@ nav ul li a {
   color: #fff;
   padding: 0.7rem 1rem;
 }
-.hero-section{
+
+.hero-section {
   min-height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
@@ -75,7 +76,8 @@ nav ul li a {
   isolation: isolate;
   color: white;
 }
-.hero-section::before{
+
+.hero-section::before {
   content: "";
   position: absolute;
   top: 0;
@@ -85,11 +87,12 @@ nav ul li a {
   background: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
 .hero-section h2 {
   font-size: 2rem;
 }
 
-.hero-section .content{
+.hero-section .content {
   width: 50%;
 }
 
@@ -137,12 +140,14 @@ p {
   cursor: pointer;
   display: none;
 }
+
 .menu-btn img,
-.close-btn img{
+.close-btn img {
   max-width: 100%;
   filter: invert();
 }
-.theme-btn{
+
+.theme-btn {
   all: unset;
   cursor: pointer;
   display: inline-block;
@@ -150,30 +155,36 @@ p {
   background-color: #3150d0;
   border-radius: 5px;
 }
-.about-section{
+
+.about-section {
   margin-top: 5em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
 }
-img{
+
+img {
   max-width: 100%;
 }
-.latest-work{
+
+.latest-work {
   margin-top: 5em;
   text-align: center;
 }
-.latest-work .gallery{
+
+.latest-work .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1em;
   margin-top: 2em;
 }
-.latest-work .gallery img{
+
+.latest-work .gallery img {
   aspect-ratio: 3/4;
   object-fit: cover;
   border-radius: 5px;
 }
+
 footer {
   background-color: #333;
   color: white;
@@ -183,7 +194,8 @@ footer {
   bottom: 0;
   margin-top: 2em;
 }
-.banner-section{
+
+.banner-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,7 +205,8 @@ footer {
   background: url(../img/alexander-dummer.jpg) no-repeat center center/cover;
   text-align: center;
 }
-.banner-section::before{
+
+.banner-section::before {
   content: "";
   position: absolute;
   top: 0;
@@ -203,18 +216,29 @@ footer {
   background: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
-.banner-section h2{
+
+.banner-section h2 {
   color: white;
 }
+
 .breadcrums {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    column-gap: 1em;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  column-gap: 1em;
 }
+.breadcrums li a{
+    color: white;
+    text-decoration: none;
+}
+.breadcrums li {
+  color: white;
+ 
+}
+
 @media (max-width: 768px) {
   p {
     font-size: 0.9rem;
@@ -275,18 +299,22 @@ footer {
     left: 15rem;
     margin: 25px;
   }
-  .hero-section .content{
+
+  .hero-section .content {
     width: 100%;
   }
-  .latest-work .gallery{
+
+  .latest-work .gallery {
     grid-template-columns: 1fr 1fr;
   }
-  .about-section{
+
+  .about-section {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width:576px) {
-  .latest-work .gallery{
+  .latest-work .gallery {
     grid-template-columns: 1fr;
   }
 }
