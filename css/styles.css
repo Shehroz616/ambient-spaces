@@ -297,13 +297,9 @@ footer {
   width: 600px;
   max-width: 100%;
   border-radius: 02px;
-  border-top: 04px solid #47b2e4;
   margin: 0 10px;
 }
 
-.container .contact_data form {
-  padding: 0 1rem;
-}
 
 .container .contact_data form input,
 textarea {
@@ -342,7 +338,6 @@ textarea {
 .container .contact_data2 {
   background: #fff;
   border-radius: 02px;
-  border-top: 04px solid #3498db;
   width: 400px;
   max-width: 100%;
   margin: 0 10px;
