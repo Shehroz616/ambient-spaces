@@ -278,7 +278,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
-  padding: 1em;
   margin-top: 2em;
 }
 .about-section p{
@@ -288,6 +287,7 @@ footer {
   font-size: 1.5em;
 }
 .about-text-section>div{
+  padding: 1em;
   background: #ccc;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
