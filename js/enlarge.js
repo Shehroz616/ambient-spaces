@@ -10,6 +10,6 @@ function enlargeImage(e) {
 
 function closeModal() {
     var modal = document.getElementById('myModal');
-    modal.style.visibility = 'hodden';
+    modal.style.visibility = 'hidden';
     modal.style.opacity = '0';
 }
