@@ -274,6 +274,23 @@ footer {
 .close:hover {
   color: #ccc;
 }
+.about-text-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  background: #ccc;
+  padding: 1em;
+  margin-top: 2em;
+}
+.about-section p{
+  margin: 0;
+}
+.about-section h4{
+  font-size: 1.5em;
+}
+.about-text-section>div{
+  box-shadow: 5px 5px 5px black;
+}
 
 
 @media (max-width: 768px) {
