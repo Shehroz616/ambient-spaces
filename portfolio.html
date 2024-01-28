@@ -50,28 +50,28 @@
             <div class="latest-work">
                 <h2>My Artwork Work</h2>
                 <div class="gallery">
-                    <a href="javascript:void(0)" onclick="enlargeImage()">
+                    <a href="javascript:void(0)" onclick="enlargeImage(this)">
                         <img src="img/benjamin-suter.jpg" alt="">
                     </a>
-                    <a href="javascript:void(0)" onclick="enlargeImage()">
+                    <a href="javascript:void(0)" onclick="enlargeImage(this)">
                         <img src="img/matthew-henry.jpg" alt="">
                     </a>
-                    <a href="javascript:void(0)" onclick="enlargeImage()">
+                    <a href="javascript:void(0)" onclick="enlargeImage(this)">
                         <img src="img/matthew-henry.jpg" alt="">
                     </a>
-                    <a href="javascript:void(0)" onclick="enlargeImage()">
+                    <a href="javascript:void(0)" onclick="enlargeImage(this)">
                         <img src="img/matthew-henry.jpg" alt="">
                     </a>
-                    <a href="javascript:void(0)" onclick="enlargeImage()">
+                    <a href="javascript:void(0)" onclick="enlargeImage(this)">
                         <img src="img/benjamin-suter.jpg" alt="">
                     </a>
-                    <a href="javascript:void(0)" onclick="enlargeImage()">
+                    <a href="javascript:void(0)" onclick="enlargeImage(this)">
                         <img src="img/matthew-henry.jpg" alt="">
                     </a>
-                    <a href="javascript:void(0)" onclick="enlargeImage()">
+                    <a href="javascript:void(0)" onclick="enlargeImage(this)">
                         <img src="img/matthew-henry.jpg" alt="">
                     </a>
-                    <a href="javascript:void(0)" onclick="enlargeImage()">
+                    <a href="javascript:void(0)" onclick="enlargeImage(this)">
                         <img src="img/matthew-henry.jpg" alt="">
                     </a>
                 </div>
@@ -89,13 +89,13 @@
 </footer>
 
 <script>
-    function enlargeImage(imageUrl) {
+    function enlargeImage(e) {
         var modal = document.getElementById('myModal');
         var modalImg = document.getElementById('enlargedImg');
-        let source = this.querySelector("img").src
+        let source = e.querySelector("img").src
 
         modal.style.display = 'block';
-        modalImg.src = imageUrl;
+        modalImg.src = source;
     }
 
     function closeModal() {
