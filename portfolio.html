@@ -92,6 +92,7 @@
     function enlargeImage(imageUrl) {
         var modal = document.getElementById('myModal');
         var modalImg = document.getElementById('enlargedImg');
+        let source = imageUrl.querySelector("img").src
 
         modal.style.display = 'block';
         modalImg.src = imageUrl;
