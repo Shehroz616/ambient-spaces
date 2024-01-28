@@ -230,14 +230,51 @@ footer {
   list-style: none;
   column-gap: 1em;
 }
-.breadcrums li a{
-    color: white;
-    text-decoration: none;
+
+.breadcrums li a {
+  color: white;
+  text-decoration: none;
 }
+
 .breadcrums li {
   color: white;
- 
+
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ccc;
+}
+
 
 @media (max-width: 768px) {
   p {
