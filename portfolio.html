@@ -50,28 +50,28 @@
             <div class="latest-work">
                 <h2>My Artwork Work</h2>
                 <div class="gallery">
-                    <a href="portfolio.html">
+                    <a href="javascript:void(0)" onclick="enlargeImage()">
                         <img src="img/benjamin-suter.jpg" alt="">
                     </a>
-                    <a href="portfolio.html">
+                    <a href="javascript:void(0)" onclick="enlargeImage()">
                         <img src="img/matthew-henry.jpg" alt="">
                     </a>
-                    <a href="portfolio.html">
+                    <a href="javascript:void(0)" onclick="enlargeImage()">
                         <img src="img/matthew-henry.jpg" alt="">
                     </a>
-                    <a href="portfolio.html">
+                    <a href="javascript:void(0)" onclick="enlargeImage()">
                         <img src="img/matthew-henry.jpg" alt="">
                     </a>
-                    <a href="portfolio.html">
+                    <a href="javascript:void(0)" onclick="enlargeImage()">
                         <img src="img/benjamin-suter.jpg" alt="">
                     </a>
-                    <a href="portfolio.html">
+                    <a href="javascript:void(0)" onclick="enlargeImage()">
                         <img src="img/matthew-henry.jpg" alt="">
                     </a>
-                    <a href="portfolio.html">
+                    <a href="javascript:void(0)" onclick="enlargeImage()">
                         <img src="img/matthew-henry.jpg" alt="">
                     </a>
-                    <a href="portfolio.html">
+                    <a href="javascript:void(0)" onclick="enlargeImage()">
                         <img src="img/matthew-henry.jpg" alt="">
                     </a>
                 </div>
@@ -79,15 +79,27 @@
         </div>
     </main>
 
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="enlargedImg">
+    </div>
+
 <footer>
     <p>&copy; 2024 Urban Sports Aerial Photography. All rights reserved.</p>
 </footer>
 
 <script>
     function enlargeImage(imageUrl) {
-        // Function to enlarge images when clicked (You can implement a lightbox or modal)
-        // Example: open a modal with the clicked image
-        alert("Implement image enlargement logic here for: " + imageUrl);
+        var modal = document.getElementById('myModal');
+        var modalImg = document.getElementById('enlargedImg');
+
+        modal.style.display = 'block';
+        modalImg.src = imageUrl;
+    }
+
+    function closeModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'none';
     }
 </script>
 
